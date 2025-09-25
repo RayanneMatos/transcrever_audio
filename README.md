@@ -64,29 +64,20 @@ Baixe de https://ffmpeg.org/download.html
  e adicione ao PATH.
 
 Como rodar
-
 No terminal, dentro da pasta meu_app:
-
 python app.py
 
 
 Abra o navegador em:
-
 http://127.0.0.1:5000
-
-
 Você verá a interface para enviar áudios e baixar a transcrição.
 
 Observações
 
 O GitHub Pages não suporta Flask, então o app só roda localmente ou em serviços como Render, Railway ou PythonAnywhere.
-
 O modelo Whisper suporta diferentes tamanhos (tiny, base, small, medium, large). No app.py, o padrão é small.
 
 Créditos
-
 Desenvolvido por Rayanne Matos
-
 Baseado no modelo Whisper da OpenAI
-
 UI simples em HTML, CSS e JavaScript
