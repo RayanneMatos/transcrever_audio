@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Transcrição de Áudio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Transcrição de Áudio com Whisper</h1>
+        <form method="post" enctype="multipart/form-data" id="audioForm">
+            <input type="file" name="audio" accept="audio/*" required class="file-input">
+            <button type="submit" class="btn-submit">Transcrever</button>
+        </form>
+
+        <!-- Barra de progresso -->
+        <div class="progress-container" style="display:none;">
+            <div class="progress-bar" id="progressBar"></div>
+            <span id="progressText">0%</span>
+        </div>
+    </div>
+</body>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>
